@@ -19,9 +19,15 @@ const typeDefs = gql`
     link: Link
   }
 
+  type Auth {
+    token: ID!
+    user: User
+  }
+  
   type Query {
     me(username: String): [User]
   }
+
 
   type Mutation {
     login(email: String!, password: String!): Auth
