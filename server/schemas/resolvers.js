@@ -7,6 +7,20 @@ const resolvers = {
         const params = username ? { username } : {};
         return User.find();
       },
+    },
+    Mutation: {
+      login: async () => {
+
+      },
+      addUser: async () => {
+
+      },
+      saveBook: async () => {
+
+      },
+      removeBook: async () => {
+        
+      }
     }
   };
   
